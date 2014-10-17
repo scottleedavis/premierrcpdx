@@ -1,0 +1,161 @@
+	.section:nth-child(2n) {background-color:#1abc9c}
+	.section:nth-child(2n) .title-section * {color:#fff}
+.navbar-default .navbar-nav > li > a.active, .navbar-nav li.current_page_item a, .navbar-nav li.current-menu-item > a, .navbar-nav li.current-menu-parent > a,
+.navbar-default .navbar-nav > .active > a, .navbar-default .navbar-nav > .active > a:hover, .navbar-default .navbar-nav > .active > a:focus,
+.pagination-list li a:hover, .pagination-list li.current a,#wp-calendar caption,a.comment-reply-link,#contact-form2 input[type="submit"], .services a:hover, 
+#banner, .title-dedicated, .cbp-ig-grid .cbp-ig-title:before, .quote blockquote, ul.social li a, .tab-list li a:hover,
+.cbp-ig-grid li > a:hover, .team-member:hover, .progress-bar, footer, .footer-bottom, .accordion h2.active, .toggle-trigger.open, 
+.blog-post, .tagcloud li a, #search-bar button{
+	background-color:#e12727;
+}
+	.section:nth-child(2n){background-color:#e12727;}
+.footer-bottom, .blog-post {opacity:0.9}
+.ui-state-active a{background:#e12727 !important;}
+ul.filter li a.active, .navbar-nav > li i, .cbp-ig-grid li > a, .inner-project span, #contact-form input[type="submit"]{
+	color:#e12727;
+}
+.nav-arrows span,  .services a:hover, .bxslider img, .pricing-active .pricing-table{
+	border-color:#e12727;
+}
+.team-member h3:after{
+	border-top-color:#e12727;
+}
+.module_arrow, .arrow-right, .top-bar-section .dropdown li:hover {
+	border-left-color:#e12727;
+}
+.footer-widget h3 span, .sl-slider h2 span, .recent-projects > h2 span, h2.heading span, .team > h2 span, .contact-page > h2 span, .blog > h2 span, 
+h2.top-title span, .single-work > h2 span, .filter-items a.active, .filter-items li a:hover{
+	border-bottom-color:#e12727;
+}
+.top-header ul li{border-right-color:#666}
+.top-header ul li:first-child{border-left-color:#666}
+.top-header .login{background:#666}
+	body{background:     }
+.topbar{
+}
+
+#_ {
+background: white;
+font-family: 'Open Sans', sans-serif;
+}
+
+pre {
+
+background-color: white;
+border: none;
+}
+
+.fc-header {
+
+border: none;
+}
+.fc-header td {
+border:none;
+}
+
+.fc-state-active span.fc-button-inner {
+background: #2d59bf;
+}
+
+@media (min-width: 768px) and (max-width: 979px) { 
+#_ {
+background: white;
+font-family: 'Open Sans', sans-serif;
+}
+
+pre {
+
+background-color: white;
+border: none;
+}
+
+.fc-header {
+
+border: none;
+}
+.fc-header td {
+border:none;
+}
+
+.fc-state-active span.fc-button-inner {
+background: #2d59bf;
+}
+
+.navbar-default .navbar-nav > li > a.active {
+background: #2d59bf !important;
+}
+
+
+}
+@media (max-width: 767px) {
+#_ {
+background: white;
+font-family: 'Open Sans', sans-serif;
+}
+
+pre {
+
+background-color: white;
+border: none;
+}
+
+.fc-header {
+
+border: none;
+}
+.fc-header td {
+border:none;
+}
+
+.fc-state-active span.fc-button-inner {
+background: #2d59bf;
+}
+
+.navbar-default .navbar-nav > li > a.active {
+background: #2d59bf !important;
+}
+
+}
+@media (max-width: 480px) {
+#_ {
+background: white;
+font-family: 'Open Sans', sans-serif;
+}
+
+pre {
+
+background-color: white;
+border: none;
+}
+
+.fc-header {
+
+border: none;
+}
+.fc-header td {
+border:none;
+}
+
+.fc-state-active span.fc-button-inner {
+background: #2d59bf;
+}
+
+.navbar-default .navbar-nav > li > a.active {
+background: #2d59bf !important;
+}
+
+}
+
+.pagecustom-6{background-repeat:repeat !important;}	
+.pagecustom-13{background-repeat:repeat !important;}	
+.pagecustom-15{background-repeat:repeat !important;}		.pagecustom-15 * {color:#fff}
+		
+.pagecustom-282{background-repeat:repeat !important;}	
+.pagecustom-301{background-repeat:repeat !important;}	
+.pagecustom-304{background-repeat:repeat !important;}	
+.pagecustom-317{background-repeat:repeat !important;}	
+.pagecustom-578{background-repeat:repeat !important;}	
+.pagecustom-112{background-repeat:no-repeat !important;background-image:url(http://weblusive-themes.com/flatible/wp-content/uploads/2014/01/bg.jpg) !important;}	
+.pagecustom-640{background-repeat:repeat !important;}	
+.pagecustom-666{background-repeat:repeat !important;}	
+	
