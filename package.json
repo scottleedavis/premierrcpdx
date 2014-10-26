@@ -8,7 +8,7 @@
     "start": "node server.js"
   },
   "dependencies": {
-    "express": "~4.9.x"
+    "express": "~4.9.x",
     "yamljs": "latest"
   },
   "engines": {
