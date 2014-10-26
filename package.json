@@ -12,8 +12,5 @@
     "express": "3.x",
     "underscore": "1.6",
     "yamljs": "latest"
-  },
-  "devDependencies": {
-    "express-debug": "^1.1.0"
   }
 }

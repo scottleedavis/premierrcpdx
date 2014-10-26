@@ -10,7 +10,7 @@ app.use(express.bodyParser());
 
 app.use("/", express.static(__dirname + '/public'));
 
-require('express-debug')(app, {/* settings */});
+//require('express-debug')(app, {/* settings */});
 
 app.get('/races', races.index);
 
