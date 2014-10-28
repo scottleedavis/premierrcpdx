@@ -1,4 +1,4 @@
-
+[![Build Status](https://travis-ci.org/skawtus/premierrcpdx.svg)](https://travis-ci.org/skawtus/premierrcpdx)
 premierrcpdx
 ============
 
