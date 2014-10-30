@@ -74,42 +74,6 @@ $(document).ready(function() {
 });
 });
 </script>
-<script type='text/javascript'>
-//Calendar [2]
-jQuery(document).ready(function($) {
-    // $() will work as an alias for jQuery() inside of this function
-
-$(document).ready(function() {	
-    $('#').fullCalendar({
-    	header: {
-    		left: 'prev, next today, agenda',
-    		center: 'title',
-    		right: 'month, agendaWeek, agendaDay',
-    		ignoreTimezone: false    		
-    	},
-    	 // Multiple Sources
-        eventSources: [
-        '',
-        '',
-        ''
-        ],        
-        events: {
-        	//http://www.google.com/calendar/feeds/centre.edu_5f119bnujdfol3gs59h0driv9c%40group.calendar.google.com/public/basic
-            //url: 'https://www.google.com/calendar/feeds/oj4h6ok2fah7a15p24t7c2fluc%40group.calendar.google.com/public/basic',
-            className: 'gcal-event',           // an option!
-            currentTimezone: 'America/Chicago', // an option!        	
-        },
-        	month: true,
-        	week: true,
-        	day: true,
-        	agenda: true,
-        	basic: true,
-        	//showAgendaButton: true        	
-    });
-    $('#').fullCalendar('today');
-});
-});
-</script>
 
 </head>
 <body class="home blog">
@@ -270,18 +234,18 @@ $(document).ready(function() {
 
 	<div class="col-md-4 home-post">
 		<a href="race-results/"><i class="fa fa-trophy fblock-icon" style="color:#2d59bf"></i></a>
-		<h2>Race Results</h2>
+		<h2>Results</h2>
 		<p>Results from previous races.</p>
 	</div>
 	<div class="col-md-4 home-post">
 		<a href="services/"><i class="fa fa-road fblock-icon" style="color:#2d59bf"></i></a>
-		<h2>Racing Rules</h2>
+		<h2>Rules</h2>
 		<p>Racing Rules</p>
 	</div>
 	<div class="col-md-4 home-post">
-		<a href="live-webcam/"><i class="fa fa-video-camera fblock-icon" style="color:#E01A35"></i></a>
-		<h2>Live Webcam</h2>
-		<p>Live video feed of the track</p>
+		<a href="videos/"><i class="fa fa-video-camera fblock-icon" style="color:#E01A35"></i></a>
+		<h2>Videos</h2>
+		<p>Racing action</p>
 	</div>
 
 </div>
