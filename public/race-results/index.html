@@ -32,10 +32,30 @@
 <script type='text/javascript' src='../wp-includes/js/jquery/ui/jquery.ui.core.min.js?ver=1.10.4'></script>
 <script type='text/javascript' src='../wp-includes/js/jquery/ui/jquery.ui.widget.min.js?ver=1.10.4'></script>
 <script type='text/javascript' src='../wp-includes/js/jquery/ui/jquery.ui.position.min.js?ver=1.10.4'></script>
+<script type='text/javascript' src='http://cdnjs.cloudflare.com/ajax/libs/underscore.js/1.7.0/underscore-min.js'></script>
 <script type='text/javascript' src='results.js'></script>
 </head>
 <body class="archive category category-race-results category-17">
-	
+  <!-- BEGIN: Underscore Template Definition. -->
+    <script type="text/template" class="template">
+        <div class="row-fluid">	
+            <div class="col-md-12">
+                <article id="post-603" class="post-603 post type-post status-publish format-standard hentry category-race-results tag-race-results blog-post image-post">
+                    <div class="post-content">
+                        <div class="blog-tags">
+                            <ul></ul>
+                        </div>
+                        <h2><a href="index.html#" style="cursor:default"><%- type %> results from <%- date %></a></h2>
+                        <p></p><p>  <a href="<%- file %>"><img src="../wp-content/plugins/postie/icons/silver/pdf-32.png" alt="pdf icon"> <%- file_name %></a></p>
+                        <p></p>
+                    </div>
+                </article>
+                <div class="clear"></div>
+            </div>
+        </div>
+    </script>
+    <!-- END: Underscore Template Definition. -->
+ 
 <div id="container" >
 	<header class="clearfix">
 		<!-- Static navbar -->
@@ -68,44 +88,22 @@
 	
  
 <div class="content-dedicated">
-		<div class="title-dedicated">
-		<div class="container">
-			<div class="row-fluid">
-									<div class="col-md-6">
-						<h1>
-															Race Results													</h1>
-					</div>
-													<div class="col-md-6">
-						<nav id="breadcrumbs">
-							<ul class="breadcrumb right"><li class="home"><a href="../index.html">Home</a></li><li><i class="fa fa-arrow-right"></i></li><li>Race Results </li></ul>						</nav>
-					</div>
-							</div>
-		</div>
-	</div>
-	<div class="container">
-		<div class="row-fluid">	
-						<div class="col-md-12">
-				
-			<article id="post-603" class="post-603 post type-post status-publish format-standard hentry category-race-results tag-race-results blog-post image-post">		
-						<div class="post-content">
-				<div class="blog-tags">
-					<ul>
-																							</ul>
-				</div>
-				<!-- <h2><a href="http://premierrcpdx.com/race-results/results-from-last-night/" >results from last night</a></h2> -->
-				<h2><a href="index.html#" style="cursor:default">results from last night</a></h2>
-				<p><p>  <a href="../wp-content/uploads/2014/07/7114OFF.pdf"><img src='../wp-content/plugins/postie/icons/silver/pdf-32.png' alt='pdf icon' /> Race Results</a></p>
-</p>
-                <!--
-				<a href="http://premierrcpdx.com/race-results/results-from-last-night/" class="btn btn-inverse read-more">
-					Read More					<i class="fa fa-arrow-right"></i>
-				</a>
-                -->
-			</div>
-		</article>
-		
-<div class="clear"></div>			</div>
-			       	</div>
+    <div class="title-dedicated">
+        <div class="container">
+            <div class="row-fluid">
+                <div class="col-md-6">
+                    <h1>Race Results</h1>
+                </div>
+                <div class="col-md-6">
+                    <nav id="breadcrumbs">
+                        <ul class="breadcrumb right"><li class="home"><a href="../index.html">Home</a></li><li><i class="fa fa-arrow-right"></i></li><li>Race Results </li></ul>						
+                    </nav>
+                </div>
+            </div>
+        </div>
+    </div>
+    <div id="results-list" class="container">
+
     </div>
 </div>
 
@@ -127,8 +125,7 @@
 				<div class="col-md-7">
 					<p>&copy; Copyright Premier RC Raceways & Hobbies, 2014</p>
 				</div>
-				<div class="col-md-5 text-right">
-									</div>
+				<div class="col-md-5 text-right"></div>
 			</div>
 		</div>
 	</div>
