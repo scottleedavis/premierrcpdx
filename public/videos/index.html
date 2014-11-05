@@ -24,17 +24,36 @@
 <link rel='stylesheet' id='fc_css-css'  href='../wp-content/plugins/full-calendar-js/js/fullcalendar-1.5.4/fullcalendar/fullcalendar.css?ver=4.0.css' type='text/css' media='all' />
 <script type='text/javascript' src='../wp-includes/js/jquery/jquery.js?ver=1.11.1'></script>
 <script type='text/javascript' src='../wp-includes/js/jquery/jquery-migrate.min.js?ver=1.2.1'></script>
-<script type='text/javascript' src='../wp-content/plugins/revslider/rs-plugin/js/jquery.themepunch.plugins.min.js?rev=4.1.4&amp;ver=4.0'></script>
-<script type='text/javascript' src='../wp-content/plugins/revslider/rs-plugin/js/jquery.themepunch.revolution.min.js?rev=4.1.4&amp;ver=4.0'></script>
+<script type='text/javascript' src='../wp-content/plugins/revslider/rs-plugin/js/jquery.themepunch.plugins.min.js?rev=4.1.4&ver=4.0'></script>
+<script type='text/javascript' src='../wp-content/plugins/revslider/rs-plugin/js/jquery.themepunch.revolution.min.js?rev=4.1.4&ver=4.0'></script>
 <script type='text/javascript' src='../wp-content/themes/flatible/js/modernizr.custom.79639.js?ver=4.0'></script>
 <script type='text/javascript' src='../wp-content/themes/flatible/js/bootstrap.min.js?ver=3.0.1'></script>
 <script type='text/javascript' src='http://maps.google.com/maps/api/js?sensor=false&ver=4.0'></script>
 <script type='text/javascript' src='../wp-includes/js/jquery/ui/jquery.ui.core.min.js?ver=1.10.4'></script>
 <script type='text/javascript' src='../wp-includes/js/jquery/ui/jquery.ui.widget.min.js?ver=1.10.4'></script>
 <script type='text/javascript' src='../wp-includes/js/jquery/ui/jquery.ui.position.min.js?ver=1.10.4'></script>
+<script type='text/javascript' src='http://cdnjs.cloudflare.com/ajax/libs/underscore.js/1.7.0/underscore-min.js'></script>
+<script type='text/javascript' src='videos.js'></script>
 </head>
 <body class="archive category category-race-results category-17">
-	
+	<div id="fb-root"></div>
+	<script>
+	(function(d, s, id) {
+	  var js, fjs = d.getElementsByTagName(s)[0];
+	  if (d.getElementById(id)) return;
+	  js = d.createElement(s); js.id = id;
+	  js.src = "//connect.facebook.net/en_US/sdk.js#xfbml=1&appId=1419912004929840&version=v2.0";
+	  fjs.parentNode.insertBefore(js, fjs);
+	}(document, 'script', 'facebook-jssdk'));
+</script>
+	  <!-- BEGIN: Underscore Template Definition. -->
+    <script type="text/template" class="template">
+        <div class="post-content" style="float:left;margin-left:5px;">
+						<div class="fb-post" data-href="https://www.facebook.com/video.php?v=<%- link %>" data-width="300"></div>
+        </div>
+    </script>
+    <!-- END: Underscore Template Definition. -->
+ 
 <div id="container" >
 	<header class="clearfix">
 		<!-- Static navbar -->
@@ -67,7 +86,7 @@
 	
  
 <div class="content-dedicated">
-		<div class="title-dedicated">
+	<div class="title-dedicated">
 		<div class="container">
 			<div class="row-fluid">
 									<div class="col-md-6">
@@ -76,27 +95,15 @@
 					</div>
 													<div class="col-md-6">
 						<nav id="breadcrumbs">
-							<ul class="breadcrumb right"><li class="home"><a href="../index.html">Home</a></li><li><i class="fa fa-arrow-right"></i></li><li>Videos</li></ul>						</nav>
+							<ul class="breadcrumb right"><li class="home"><a href="../index.html">Home</a></li><li><i class="fa fa-arrow-right"></i></li><li>Videos</li></ul>						
+						</nav>
 					</div>
-							</div>
+			</div>
 		</div>
 	</div>
-	<div class="container">
-		<div class="row-fluid">	
-						<div class="col-md-12">
-				
-			<article id="post-603" class="post-603 post type-post status-publish format-standard hentry category-race-results tag-race-results blog-post image-post">		
-						<div class="post-content">
-				<div class="blog-tags"></div>
-				<h2><a href="" style="cursor:default">video from...</a></h2>
-				<p><p>  <a href="../wp-content/uploads/2014/07/7114OFF.pdf"><img src='../wp-content/plugins/postie/icons/silver/pdf-32.png' alt='pdf icon' /> Race Results</a></p>
-</p>
-			</div>
-		</article>
-		
-<div class="clear"></div>			</div>
-			       	</div>
-    </div>
+	<div id="videos-list" class="container">
+
+	</div>
 </div>
 
 </div> <!--main content end -->
