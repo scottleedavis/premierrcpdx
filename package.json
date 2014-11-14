@@ -9,7 +9,8 @@
   },
   "dependencies": {
     "express": "~4.9.x",
-    "yamljs": "latest"
+    "yamljs": "latest",
+    "mongodb": "latest"
   },
   "engines": {
     "node": "0.10.x"
