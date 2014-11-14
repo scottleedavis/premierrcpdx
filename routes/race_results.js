@@ -20,9 +20,9 @@ exports.index = function(req, res) {
     };
     getResults( 'offroad',function(err,offroad_docs){
         resp.offroad = offroad_docs;
-        getResults( 'offroad',function(err,onroad_docs){
+        getResults( 'onroad',function(err,onroad_docs){
             resp.onroad = onroad_docs;
-            getResults( 'offroad',function(err,oval_docs){
+            getResults( 'oval',function(err,oval_docs){
                 resp.oval = oval_docs;
                 res.send(resp);
             });
