@@ -9,7 +9,8 @@
   },
   "dependencies": {
     "express": "~4.9.x",
-    "mongodb": "latest"
+    "mongodb": "latest",
+    "underscore": "latest"
   },
   "engines": {
     "node": "0.10.x"
