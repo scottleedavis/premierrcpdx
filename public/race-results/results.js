@@ -12,25 +12,25 @@
             $( "script.template" ).html()
         );
 
-        var offroad = _.each(data[":offroad"], function(item){
+        var offroad = _.each(data["offroad"], function(item){
             item.type = "Offroad";
         });
-        var onroad = _.each(data[":onroad"], function(item){
+        var onroad = _.each(data["onroad"], function(item){
             item.type = "Onroad";
         });
-        var oval = _.each(data[":oval"], function(item){
+        var oval = _.each(data["oval"], function(item){
             item.type = "Oval";
         });
         
         var races = _.union(offroad, onroad, oval);
         races = _.sortBy(races, function(r){
-            return Object.keys(r)[0];
+            return r.date;
         }).reverse();
         
         _.each( races, function(race){
-            var date = Object.keys(race)[0];
+            var date = race.date;
             var type = race.type;
-            var file = race[date];
+            var file = race.link;
             var filename_chunks = file.split('/');
             var file_name = filename_chunks[filename_chunks.length-1].split('-');
             file_name.shift()
