@@ -1,6 +1,3 @@
-//read from yml file into json...
-//YAML = require('yamljs');
-
 // Retrieve
 function getResults(type,callback){
     var MongoClient = require('mongodb').MongoClient;
@@ -16,8 +13,6 @@ function getResults(type,callback){
 }
 
 exports.index = function(req, res) {
-    //var nativeObject = YAML.load('rctech-forum-scraper/results_store.yml');
-   // res.send(nativeObject);
     var resp = {
         offroad: null,
         onroad: null,

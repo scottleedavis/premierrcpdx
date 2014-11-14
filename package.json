@@ -1,7 +1,7 @@
 {
   "name": "premierrcpdx",
   "description": "premierrcpdx site code",
-  "version": "0.0.1",
+  "version": "0.0.2",
   "private": true,
   "main": "server.js",
   "scripts": {
@@ -9,7 +9,6 @@
   },
   "dependencies": {
     "express": "~4.9.x",
-    "yamljs": "latest",
     "mongodb": "latest"
   },
   "engines": {
