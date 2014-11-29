@@ -1,4 +1,3 @@
-//read from yml file into json...
 var vids = [
   {
     comment: "Offroad",
