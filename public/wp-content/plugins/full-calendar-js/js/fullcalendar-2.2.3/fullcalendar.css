@@ -4,6 +4,18 @@
  * (c) 2013 Adam Shaw
  */
 
+.offroadCalendar {
+    background-color: #FB2004 !important;
+}
+
+.onroadCalendar {
+    background-color: #2D3E50 !important;
+}
+
+.ovalCalendar {
+    background-color: #302F2F !important;
+}
+
 
 .fc {
 	direction: ltr;
