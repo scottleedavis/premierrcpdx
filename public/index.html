@@ -23,7 +23,7 @@
 <link rel='stylesheet' id='jplayer-styles-css'  href='wp-content/themes/flatible/js/jplayer/skin/pink.flag/jplayer.pink.flag.css?ver=3.0.1.css' type='text/css' media='all' />
 <link rel='stylesheet' id='dynamic-styles-css'  href='wp-content/themes/flatible/css/dynamic-styles.css' type='text/css' media='all' />
 <link rel='stylesheet' id='Flatible-opensans-css'  href='http://fonts.googleapis.com/css?family=Open+Sans%3A300italic%2C400italic%2C600italic%2C700italic%2C400%2C700%2C600%2C300&ver=4.0' type='text/css' media='all' />
-<link rel='stylesheet' id='fc_css-css'  href='wp-content/plugins/full-calendar-js/js/fullcalendar-1.5.4/fullcalendar/fullcalendar.css?ver=4.0.css' type='text/css' media='all' />
+<link rel='stylesheet' id='fc_css-css'  href='wp-content/plugins/full-calendar-js/js/fullcalendar-2.2.3/fullcalendar.css?ver=4.0.css' type='text/css' media='all' />
 
 <script type='text/javascript' src='wp-includes/js/jquery/jquery.js?ver=1.11.1'></script>
 <script type='text/javascript' src='wp-includes/js/jquery/jquery-migrate.min.js?ver=1.2.1'></script>
@@ -35,8 +35,9 @@
 <script type='text/javascript' src='wp-includes/js/jquery/ui/jquery.ui.core.min.js?ver=1.10.4'></script>
 <script type='text/javascript' src='wp-includes/js/jquery/ui/jquery.ui.widget.min.js?ver=1.10.4'></script>
 <script type='text/javascript' src='wp-includes/js/jquery/ui/jquery.ui.position.min.js?ver=1.10.4'></script>
-<script type='text/javascript' src='wp-content/plugins/full-calendar-js/js/fullcalendar-1.5.4/fullcalendar/fullcalendaroriginal.js?ver=4.0'></script>
-<script type='text/javascript' src='wp-content/plugins/full-calendar-js/js/fullcalendar-1.5.4/fullcalendar/gcal.js?ver=4.0'></script>
+<script type='text/javascript' src='wp-content/plugins/full-calendar-js/js/fullcalendar-2.2.3/lib/moment.min.js'></script>
+<script type='text/javascript' src='wp-content/plugins/full-calendar-js/js/fullcalendar-2.2.3/fullcalendar.js'></script>
+<script type='text/javascript' src='wp-content/plugins/full-calendar-js/js/fullcalendar-2.2.3/gcal.js'></script>
 
   
 <script type='text/javascript'>
@@ -46,6 +47,7 @@ jQuery(document).ready(function($) {
 
 $(document).ready(function() {	
     $('#_').fullCalendar({
+        googleCalendarApiKey: 'AIzaSyB8DDF8UIUnGOm0CLBB8CL7MZw42GEd7lw',
     	header: {
     		left: 'prev, next today, agenda',
     		center: 'title',
@@ -54,10 +56,16 @@ $(document).ready(function() {
     	},
     	 // Multiple Sources
         eventSources: [
-        'https://www.google.com/calendar/feeds/oj4h6ok2fah7a15p24t7c2fluc%40group.calendar.google.com/public/basic',
-        'https://www.google.com/calendar/feeds/ho92bspndj1m1mn7l6mo47asss%40group.calendar.google.com/public/basic',
-        ''
-        ],        
+        //'https://www.google.com/calendar/feeds/oj4h6ok2fah7a15p24t7c2fluc%40group.calendar.google.com/public/basic',
+        //'https://www.google.com/calendar/feeds/ho92bspndj1m1mn7l6mo47asss%40group.calendar.google.com/public/basic'
+            {
+                googleCalendarId: 'ho92bspndj1m1mn7l6mo47asss@group.calendar.google.com'
+            },
+            {
+                googleCalendarId: 'oj4h6ok2fah7a15p24t7c2fluc@group.calendar.google.com'
+            }
+        ],
+
         events: {
         	//http://www.google.com/calendar/feeds/centre.edu_5f119bnujdfol3gs59h0driv9c%40group.calendar.google.com/public/basic
             //url: 'https://www.google.com/calendar/feeds/oj4h6ok2fah7a15p24t7c2fluc%40group.calendar.google.com/public/basic',
