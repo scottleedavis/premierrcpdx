@@ -1,5 +1,6 @@
-[![Build Status](https://travis-ci.org/skawtus/premierrcpdx.svg)](https://travis-ci.org/skawtus/premierrcpdx)
-premierrcpdx
+[![Build Status](https://travis-ci.org/skawtus/ap-premierrcpdx-com.svg?branch=master)](https://travis-ci.org/skawtus/ap-premierrcpdx-com)
+
+ap-premierrcpdx-com
 ============
 
 originally wordpress, now nodejs
