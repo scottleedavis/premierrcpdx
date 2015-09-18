@@ -1,0 +1,15 @@
+{
+    "Report": "Premier RC PDX",
+    "output": "results.json",
+    "build": {
+        "ruby": {
+            "pattern": "Gemfile",
+            "command": "bundle install --path vendor/bundle"
+        }
+    },
+    "scan": {
+        "license": {
+            "command": "license_finder"
+        }
+    }
+}
